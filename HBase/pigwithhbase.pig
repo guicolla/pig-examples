@@ -1,3 +1,4 @@
+/*script para ler um arquivo do hdfs e gravar no hbase*/
 file = LOAD '/user/admin/u.user' USING PigStorage('|') 
 AS (userID:int, age:int, gender:chararray, occupation:chararray, zip:int);
 
