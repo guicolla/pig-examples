@@ -1,3 +1,5 @@
+/*Script que utiliza o phoenix para carregar os dados em uma tabela do hbase, apos carregar os dados esses dados sao
+lidos novamente e é realizado alguns filtros para mostrar quantos projetos deram failed e quantos deram successful*/
 REGISTER /usr/hdp/current/phoenix-client/phoenix-client.jar
 
 dados = LOAD '/user/admin/projects2.csv' USING PigStorage(',') as (id: int, name: chararray,
