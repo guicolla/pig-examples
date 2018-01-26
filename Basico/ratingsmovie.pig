@@ -1,3 +1,4 @@
+/*Script feito no curso da Udemy, para aprender os comandos basicos do pig*/
 /*Lendo o arquivo u.data dentro do HDFS e armazenando dentro da variavel ratings
 (userID,movieID,rating,ratingTime)
 (userID,movieID,rating,ratingTime)
