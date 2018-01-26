@@ -1,3 +1,4 @@
+/*Script para testar a funço LIMIT do pig*/
 ratings = LOAD '/user/admin/u.data' as (userID: int, movieID: int, rating: int, ratingTime
 : int);
 ratings_limit = LIMIT ratings 5;
