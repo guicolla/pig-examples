@@ -1,4 +1,6 @@
 /*https://www.kaggle.com/kemical/kickstarter-projects*/
+/*le um arquivo do hdfs e transforma esse arquivo em 2 relações, após criar essas 2 relações é realizado alguns filtrous,
+agrupamentos e join entre as relaçes para mostrar qual projeto deu failed, succcessful, suspended e live*/
 project_template = LOAD '/user/admin/projects2.csv' USING PigStorage(',') as (id: int, name: chararray,
 category: chararray, main_category: chararray, currency: chararray, deadline: chararray, goal: int,
 launched: chararray, pledged: int, state: chararray, backers: int, country: chararray, usd_pledged: int);
