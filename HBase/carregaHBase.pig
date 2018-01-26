@@ -1,4 +1,5 @@
-users = LOAD '/user/maria_dev/ml-100k/u.user' 
+/*Script para ler um arquivo do hdfs e inserir dentro do hbase*/
+users = LOAD '/user/admin/u.user' 
 USING PigStorage('|') 
 AS (userID:int, age:int, gender:chararray, occupation:chararray, zip:int);
 
